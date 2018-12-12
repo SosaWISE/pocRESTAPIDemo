@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A7A8A8F421C032840039A262 /* NetworkProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A8A8F321C032840039A262 /* NetworkProcessor.swift */; };
 		A7D8862421C02E1600379E58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8862321C02E1600379E58 /* AppDelegate.swift */; };
 		A7D8862621C02E1600379E58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7D8862521C02E1600379E58 /* ViewController.swift */; };
 		A7D8862921C02E1600379E58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A7D8862721C02E1600379E58 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A7A8A8F321C032840039A262 /* NetworkProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkProcessor.swift; sourceTree = "<group>"; };
 		A7D8862021C02E1600379E58 /* POC-RESTAPIDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "POC-RESTAPIDemo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7D8862321C02E1600379E58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A7D8862521C02E1600379E58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +37,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A7A8A8F521C032B00039A262 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A7A8A8F321C032840039A262 /* NetworkProcessor.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A7D8861721C02E1600379E58 = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +64,7 @@
 		A7D8862221C02E1600379E58 /* POC-RESTAPIDemo */ = {
 			isa = PBXGroup;
 			children = (
+				A7A8A8F521C032B00039A262 /* Model */,
 				A7D8862321C02E1600379E58 /* AppDelegate.swift */,
 				A7D8862521C02E1600379E58 /* ViewController.swift */,
 				A7D8862721C02E1600379E58 /* Main.storyboard */,
@@ -135,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A8A8F421C032840039A262 /* NetworkProcessor.swift in Sources */,
 				A7D8862621C02E1600379E58 /* ViewController.swift in Sources */,
 				A7D8862421C02E1600379E58 /* AppDelegate.swift in Sources */,
 			);

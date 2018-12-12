@@ -5,6 +5,9 @@
 //  Created by Andres Sosa on 12/11/18.
 //  Copyright © 2018 Andres Sosa. All rights reserved.
 //
+/*
+ * REF:  https://www.youtube.com/watch?v=LEFsK9mUwAE
+ */
 
 import UIKit
 
@@ -15,7 +18,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        let url = URL(string: "https://api.darksky.net/forecast/867730b39bfe21e8e766bd9fb998240f/37.8267,-122.4233")!
+        
+        let networkProcessor = NetworkProcessor(url: url)
+        
+        networkProcessor.downloadJSONFromURL { (jsonDictionary) in
+            
+            print(jsonDictionary)
+        }
+        
         return true
     }
 
